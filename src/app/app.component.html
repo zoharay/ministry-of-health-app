@@ -1,0 +1,11 @@
+
+<app-header (toggleSidenav)="toggleSidenav()"></app-header>
+<div class="wrapper" [class.is-sidenav-open]="isSidenavOpen">
+     <app-sidenav class="sidenav"></app-sidenav>
+  <div class="content">
+     <line-chart></line-chart>
+     <br/><br/><br/>
+     <stack-chart></stack-chart>
+  </div>
+</div> 
+

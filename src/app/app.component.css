@@ -1,0 +1,98 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .menu-toggle {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+  }
+  
+  .open {
+    height: auto;
+  }
+  p {
+    font-family: Lato;
+  }
+  .wrapper {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidenav {
+    background-color:rgb(202, 198, 198);
+    min-width: 250px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    z-index: 999;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .is-sidenav-open .sidenav {
+    transform: translateX(0);
+  }
+  
+  .brand-logo {
+    margin-right: auto;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    margin-right: 10px;
+    min-width: 40px;
+    padding: 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .fa-bars {
+    display: block;
+  }
+  
+  @media (max-width: 576px) {
+    .brand-logo {
+      text-align: center;
+    }
+  }
+  
+
+  
